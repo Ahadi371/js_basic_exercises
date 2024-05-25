@@ -7,4 +7,6 @@ day = day < 10 ? '0' + day :day;
 month = month < 10 ? '0'+ month: month;
 
 let fullDate = day + "-" + month + "-" + year;
+let todayDate = month + "-" + day + "-" + year;
 document.getElementById('today').innerHTML = fullDate;
+document.getElementById('today-date').innerHTML = todayDate;
