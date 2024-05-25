@@ -8,11 +8,11 @@
 </head>
 
 <body>
-
+<p id="year"></p>
     <script>
         let year = prompt("Enter a Year");
-         console.log((year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0));
-             
+         let leap = ((year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0));
+             document.getElementById('year').innerHTML = 'leap year :' +  leap;
     </script>
 </body>
 
