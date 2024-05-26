@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label type="1stnumber">1st Number</label>
+            <input type="number" name="1stnumber" id="1stnumber">
+        </div>
+        <div>
+            <label type="2stnumber">2st Number</label>
+            <input type="number" name="2stnumber" id="2ndnumber">
+        </div>
+    </form>
+    <p id="result">The Result is :</p>
+    <button type="button" onclick="multiplyby()" >Multiply by</button>
+    <button></button>
+    <script>
+        function multiplyby() {
+            let a = parseFloat(document.getElementById('1stnumber').value);
+            let b = parseFloat(document.getElementById('2ndnumber').value);
+            let multiplyby = a * b;
+            document.getElementById('result').innerHTML = multiplyby;
+        }
+        function name(params) {
+            
+        }
+    </script>
+</body>
+</html>
