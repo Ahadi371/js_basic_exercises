@@ -8,8 +8,12 @@
 <body>
     <h2 id="find_sunday"></h2>
     <script>
-      let result = "";
-      for ()
+      for (let year = 2014; year <= 2050; year++){
+        let jny = new Date(year, 0, 1);
+        if (jny.getDay() === 0) {
+            document.getElementById('find_sunday').innerHTML += year + '<br>';
+        }
+      }
 
     </script>
 </body>
