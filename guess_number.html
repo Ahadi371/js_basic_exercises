@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess number</title>
+</head>
+
+<body>
+    <h3 id="guess-number"></h3>
+    <script>
+        let number = Math.floor((Math.random() * 10) + 1);
+        console.log(number);
+        let input = prompt("Enter a number");
+        if (input == number) {
+            document.getElementById("guess-number").innerHTML = "Good Work";
+        }
+        else {
+                document.getElementById("guess-number").innerHTML = "Not matched number";
+            }
+
+        
+
+    </script>
+</body>
+
+</html>
