@@ -15,12 +15,18 @@
         </div>
         <p id="celsicius"></p>
         <button type="button" onclick="celsicius()">Celsicius</button>
-        <button></button>
+        <button type="button" onclick="fahrenheit()">Fahrenheit</button>
 <script>
     function celsicius() {
         let tem = parseFloat(document.getElementById('number').value);
         let f = tem *(9 / 5 )+ 32;
         document.getElementById('celsicius').innerHTML = " F =" +f;
+    }
+    function fahrenheit() {
+        let frnt = parseFloat(document.getElementById('number').value);
+
+        let cls = (frnt - 32) * 5/9; 
+        document.getElementById('celsicius').innerHTML = "C = " + cls;  
     }
 </script>
     </script>
