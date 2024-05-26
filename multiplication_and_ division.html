@@ -13,21 +13,28 @@
         </div>
         <div>
             <label type="2stnumber">2st Number</label>
-            <input type="number" name="2stnumber" id="2ndnumber">
+            <input type="number" name="2ndnumber" id="2ndnumber">
         </div>
     </form>
-    <p id="result">The Result is :</p>
+    <h3 id="result">The Result is :</h3>
     <button type="button" onclick="multiplyby()" >Multiply by</button>
-    <button></button>
+    <button type="button" onclick="division()">Division</button>
     <script>
         function multiplyby() {
             let a = parseFloat(document.getElementById('1stnumber').value);
             let b = parseFloat(document.getElementById('2ndnumber').value);
             let multiplyby = a * b;
-            document.getElementById('result').innerHTML = multiplyby;
-        }
-        function name(params) {
             
+            document.getElementById('result').innerHTML ='The Result is :' + multiplyby;
+            
+        }
+        function division() {
+            let c = parseFloat(document.getElementById('1stnumber').value);
+            let d = parseFloat(document.getElementById('2ndnumber').value);
+            let divisition = c / d;
+
+            document.getElementById('result').innerHTML ='The Result is :' + divisition;
+
         }
     </script>
 </body>
