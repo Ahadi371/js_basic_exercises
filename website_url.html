@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website URL</title>
+</head>
+<body>
+    
+    <button type="button" onclick="showUrl()">Show URL</button>
+    <h4 id="url"></h4>
+
+    <script>
+        function showUrl() {
+
+        //get website url from BOM
+        
+        document.getElementById("url").innerHTML = "<p>The URL of this page is : </p>" + window.location.href; 
+        
+        
+        }
+    </script>
+</body>
+</html>
