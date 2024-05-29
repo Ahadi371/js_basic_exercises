@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+         function frist_last(str) {
+            let first = str.charAt(0);
+            let last = str.charAt(str.length - 1);
+            let mid = str.substring(1, str.length - 1);
+            // return last + mid + first;
+            document.getElementById('show').innerHTML = last + mid +first;
+
+        }
+       let newStr = frist_last("ahadi");
+    //    console.log(newStr);
+       
+    </script>
+</body>
+</html>
