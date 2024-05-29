@@ -8,28 +8,51 @@
 <body>
     <!-- <div>
     
-        <input type="number" name="number" id="1stnumber" placeholder="Enter a string ">
-    </div>
-    <h3 id="result"></h3>
+        <input type="text" name="string" id="1stnumber" placeholder="Enter a string ">
+    </div> -->
+   
+        <p id="demo"></p>
+        <p id="result"></p>
 
-    <div>
-    <button type="button" onclick="show()"> Show</button> -->
-    <p id="demo"></p>
+    <!-- <button type="button" onclick="addPyToString()"> Show</button> -->
     <script>
 
         // let str =  parseFloat(document.getElementById('1stnumber').value);
 
-        // function show(str) {
-        //     // let x =  parseFloat(document.getElementById('1stnumber').value);
-        //     if (str.startsWith("py")) {
-        //         document.getElementById('result').innerHTML = "Python";
-        //     }         
-        // }
-        let text = "Python Hello world, welcome to the universe.";
+      
+            // let str =  parseFloat(document.getElementById('1stnumber').value);
+            // if ('py' + x) {
+            //     document.getElementById('demo').innerHTML = "Python";
+            // }  
+        //     function show() {
+        //         let str =  parseFloat(document.getElementById('1stnumber').value);
 
-let result = text.startsWith("Python");
+        //     if (str.startsWith('py')) {       
+        //         document.getElementById('demo').innerHTML ='py' + str;
+        //     } else if (!str.startsWith("Py")) {
+        //         // return "Py" + str; 
+        //         document.getElementById('demo').innerHTML = 'py' + str;
+        //     }
+        // }       
+        
+         // let text = "Python Hello world, welcome to the universe.";
 
-document.getElementById("demo").innerHTML = result;
+        // let result = text.startsWith("Python");
+
+        // document.getElementById("demo").innerHTML = result;
+                // let str =  parseFloat(document.getElementById('1stnumber').value);
+
+        function addPyToString(str) {
+    if (str.startsWith("Py")) {
+        // return str;
+        document.getElementById('demo').innerHTML = str;
+    } else {
+        // return "Py" + str;
+        document.getElementById('result').innerHTML = 'py' + str;
+    }
+}
+console.log(addPyToString("thon")); 
+console.log(addPyToString("Python")); 
     </script>
 </body>
 </html>
