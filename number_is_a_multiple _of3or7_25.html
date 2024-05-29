@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <!-- <h3 id="result"></h3> -->
+        <input type="number" name="number" id="1stnumber" placeholder="Enter a Number ">
+    </div>
+    <h3 id="result"></h3>
+
+    <div>
+    <button type="button" onclick="show()"> Show</button>
+    <script>
+        function show() {
+            let number = parseFloat(document.getElementById('1stnumber').value);
+            if (number % 3 == 0 || number % 7 == 0) {
+                document.getElementById('result').innerHTML = 'Ans : True';
+
+            }else{
+                document.getElementById('result').innerHTML = 'Ans : False'
+            }
+        }
+    </script>
+</body>
+</html>
