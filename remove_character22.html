@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+       
+          <h3 id="result"></h3>
+
+    <div>
+    <button type="button" onclick="show()"> Show</button>
+    <script>
+        function show() {
+            // let num1 = parseFloat(document.getElementById('1stnumber').value);
+            let text = "w3resource";
+
+            // let num2 = num1.substring(0, char_pos);
+            // let num3 = num1.substring(char_pos + 1, str.length);
+            result = text.substring( 0, 7);
+
+
+            document.getElementById('result').innerHTML  = result;
+        }
+    </script>
+</body>
+</html>
