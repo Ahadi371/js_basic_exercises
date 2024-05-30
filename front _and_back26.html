@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+function string(str) {
+    // let first = str.charAt(3);
+    let last = str.substring(str.length - 3);
+    // let tem = str.substring(1, srt.lenght -1)
+    document.getElementById('show').innerHTML = last + str + last;
+}
+let newStr = string('AHADI');
+
+    </script>
+</body>
+</html>
