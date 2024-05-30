@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3 id="result"></h3>
+    <script>
+        function spaceJava(str) {
+            if (str.startsWith('java')) {
+                document.getElementById('result').innerHTML = "True";
+            }else{
+                document.getElementById('result').innerHTML = "False"
+            }            
+        }
+        let newStr = spaceJava("javascrit");
+        
+    </script>
 </body>
 </html>
