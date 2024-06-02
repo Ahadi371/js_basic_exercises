@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="result"></h3>
+    <!-- <p id="re"></p> -->
+    <script>
+        function upper(str) {
+            if (str.length <=3) {
+                document.getElementById('result').innerHTML = str.toUpperCase();
+                
+            }else{
+                document.getElementById('result').innerHTML =str.toLowerCase();
+            }
+        }
+      console.log(upper("py"));
+      console.log(upper("school"));
+    </script>
+    
+</body>
+</html>
