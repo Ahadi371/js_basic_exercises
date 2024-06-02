@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="number" name="number1" id="num1" placeholder="Enter a number">
+        <input type="number" name="number2" id="num2" placeholder="Enter a number">
+    </div>
+   <div><h4 id="result"></h4></div>
+<button type="button" onclick="show()">Result</button>
+<script>
+    function show() {
+        let a = parseFloat(document.getElementById('num1').value);
+        let b = parseFloat(document.getElementById('num2').value);
+        // console.log( typeof(a));
+        // console.log( typeof(b));
+        let sum = a + b;
+        if (sum >= 50 && sum <= 80) {
+        document.getElementById('result').innerHTML = 'Answer :65';            
+        }else{
+            document.getElementById('result').innerHTML = 'Answer : 80'
+        }
+    }
+</script>
+</body>
+</html>
