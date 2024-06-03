@@ -20,9 +20,19 @@
        let a = parseFloat(document.getElementById('num1').value);
        let b = parseFloat(document.getElementById('num2').value);
        let c = parseFloat(document.getElementById('num3').value); 
-       if (a >= 20 && ()) {
-        
-       }    
+       if (a >= 20 && (a < b || a < c)) {
+        document.getElementById('result').innerHTML = "Answer : True"
+       }else if (b >= 20 && (b < a || b <c )) {
+        document.getElementById('result').innerHTML = "Answer : True"
+
+       }else if (c >= 20 && (c < a || c < b)) {
+        document.getElementById('result').innerHTML = "Answer : True"
+
+       }else{
+        document.getElementById('result').innerHTML = "Answer : False"
+
+       }
+           
         }
     </script>
 </body>
