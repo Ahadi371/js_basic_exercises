@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="number" name="number1" id="num1" placeholder="Enter a number">
+        <input type="number" name="number2" id="num2" placeholder="Enter a number">
+    </div>
+    <div><h3 id="result">Answer :</h3></div>
+    <button type="button" onclick="show()">Result</button>
+    <script>
+        function show() {
+        let y = parseFloat(document.getElementById('num1').value);
+        let z = parseFloat(document.getElementById('num2').value);
+        if (y== 15 || z == 15 ||((y + z) == 15) || ((y - z ) == 15)) {
+            document.getElementById('result').innerHTML = "Answer : True";
+        }else{
+            document.getElementById('result').innerHTML = "Answer : False";
+        }
+        }
+    </script>
+</body>
+</html>
