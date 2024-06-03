@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="number" name="number1" id="num1" placeholder="Enter a neumber">
+        <input type="number" name="number2" id="num2" placeholder="Enter a neumber">
+    </div>
+    <div>
+        <h2 id="result">Aswer :</h2>
+    </div>
+    <button type="button" onclick="show()">Result</button>
+
+<script>
+    function show() {
+       let a = parseFloat(document.getElementById('num1').value);
+        let b = parseFloat(document.getElementById('num2').value);
+        if ((a % 7 == 0) || (a % 11 == 0) || (b % 7 ==0)|| (b % 11 ==0)) {
+            document.getElementById('result').innerHTML = "Answer : True";
+        }else{
+            document.getElementById('result').innerHTML = "Answer : False";
+        }
+    }
+</script>
+
+
+</body>
+</html>
