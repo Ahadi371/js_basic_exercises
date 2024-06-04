@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <input type="number" name="number" id="num1" placeholder="Entera number">
+    </div>
+    <div><h3 id="time"></h3></div>
+    <button type="button" onclick="show()">Result</button>
+    <script>
+        function show() {
+       let a = parseFloat(document.getElementById('num1').value);
+       let hours = Math.floor(a / 60);
+       let minuts = a % 60;
+       document.getElementById('time').innerHTML = "H : " + hours + ' : ' +"M : " + minuts            
+        }
+    </script>
+</body>
+</html>
