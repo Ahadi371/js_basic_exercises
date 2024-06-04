@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="array" id="num1" placeholder="Enter a text">
+
+    </div>
+    <div>
+        <h3 id="result"></h3>
+    </div>
+    <button type="button" onclick="show()">Answer</button>
+    <script>
+        function show() {
+      let a = document.getElementById('num1').value;
+            // if (a.split("").reverse().join("")) {
+                document.getElementById('result').innerHTML = (a.split("").reverse().join(""));
+            
+        }
+    </script>
+</body>
+</html>
