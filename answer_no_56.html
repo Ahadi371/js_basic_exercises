@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="number" name="number" id="num1" placeholder="Enter a number"><input type="number" name="number" id="num2" placeholder="Enter a number">
+    </div>
+    <h3 id="result"></h3>
+    <button type="button" onclick="show()">Result</button>
+    <script>
+        function show() {
+          let a =parseFloat(document.getElementById('num1').value);    
+          let b =parseFloat(document.getElementById('num2').value);
+          let z =a/b;
+          document.getElementById('result').innerHTML = z.toLocaleString( {maximumFractionDigits: 2});
+              }
+        
+    </script>
+</body>
+</html>
