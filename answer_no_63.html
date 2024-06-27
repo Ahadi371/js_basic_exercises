@@ -6,6 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function getMiddleThreeChars(str) {
+    // Check if the string length is odd and greater than or equal to 3
+    if (str.length < 3 || str.length % 2 === 0) {
+        throw new Error("The string length must be odd and greater than or equal to three.");
+    }
+
+    // Calculate the middle index
+    const middleIndex = Math.floor(str.length / 2);
+
+    // Extract and return the middle three characters
+    return str.substring(middleIndex - 1, middleIndex + 2);
+}
+
+// Example usage:
+const inputString = "abcdefg";  // This string has an odd length of 7
+const result = getMiddleThreeChars(inputString);
+console.log(result);  // Output: "cde"
+
+    </script>
 </body>
 </html>
