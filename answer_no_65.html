@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <input type="text" name="text" id="num1" placeholder="Enter a text">
+    </div>
+    <div><h3 id="result"></h3></div>
+    <button type="button" onclick="show()">Result</button>
+    <script>
+        function show() {
+            let str = document.getElementById('num1').value;
+            if (str.substring(str.length - 6,str.length) == 'script') {
+              document.getElementById('result').innerHTML = 'True';  
+            }else{
+                document.getElementById('result').innerHTML = 'False'
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
