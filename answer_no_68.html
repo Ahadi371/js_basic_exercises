@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" name="text" id="num1" placeholder="Enter a text">
+    <input type="numbeer" name="number" id="num2" placeholder="Enter a number">
+</div>
+<div><h3 id="result"></h3></div>
+<button type="button" onclick="show()">Result</button>
+   <script>
+    function show() {
+        
+    
+    let str =document.getElementById('num1').value;
+    let n = parseFloat(document.getElementById('num2').value);
+     let first_part = str.substring(0, n);
+     let last_part = str.substring(str.length - n);
+     document.getElementById('result').innerHTML = first_part + last_part;
+    }
+   </script>
+</body>
+</html>
