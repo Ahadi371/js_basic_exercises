@@ -18,11 +18,14 @@
         <button type="button" onclick="show()">Result</button>
     </div>
   <script>
+   function show() {
+    
    
     let a =parseFloat(document.getElementById('num1').value);
     let b =parseFloat(document.getElementById('num2').value);
     let c =parseFloat(document.getElementById('num3').value);
-
+    document.getElementById('result').innerHTML = a + b + c;
+   }
   </script>  
 </body>
 </html>
