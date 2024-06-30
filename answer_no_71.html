@@ -6,9 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <h2 id="result"></h2>
+    </div>
     <script>
         function result(array) {
-                      
+          let end_pos = array.length -1;
+          document.getElementById('result').innerHTML = array[0] == 1 || array[end_pos] == 1;           
         }
     </script>
 </body>
